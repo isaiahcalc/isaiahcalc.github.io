@@ -11,12 +11,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/touch-icon-iphone-retina.png">
   <link rel="apple-touch-icon" sizes="167x167" href="img/touch-icon-ipad-retina.png">
   <script>
-    if (
-    ("standalone" in window.navigator) &&       // Check if "standalone" property exists
-    !window.navigator.standalone                // Test if using standalone navigator
-    ){
-    window.location.href = '/calc.html';
-    }
+            if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+                if (window.navigator.standalone == true) {
+                    window.location.href = "https://jscalc.io/calc/IBa8fHL4rBmWpfeP"
+                }
+            }
   </script>
 </head>
 <body>
